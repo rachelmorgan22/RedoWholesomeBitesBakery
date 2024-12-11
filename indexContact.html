@@ -1,62 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    <link rel="stylesheet" href="stylesContact.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Wholesome Bites Bakery</title>
+  <link rel="stylesheet" href="stylesContact.css">
 </head>
 <body>
-
-<div class="navBar">
-
-    <div class="leftNav">
-    <a href="./index.html">
-    <h1 class="title">Wholesome Bites Bakery</h1>
-    </a>
-    </div>
-
-    <div class="rightNav">
-        <a href="./indexAbout.html">
-    <h2>About</h2>
-    </a>
-    <a href="./indexContact.html">
-    <h2>Contact</h2>
-    </a>
-    <a><h2>Recipes</h2></a>
-    </div>
-</div>
-
-
-<div class="contactInfo">
-
-    <div class="hours">
-    <h2>HOURS</h2>
-    <p>Take-out | Indoor & Outdoor Seating</p>
-    <p>Monday - Sunday, 7am - 9pm</p>
-    <p>Closed on major holidays</p>
+    <div class="header">
+        <h4 class="headerAddress">
+            448 Lafayette Ave, Brooklyn, NY 11205
+        </h4>
+        <h4 class="headerNumber">
+            347.533.7544
+        </h4>
+    
     </div>
     
-
-    <div class="contact">
-    <h2>CONTACT</h2>
-    <p>246.456.7890</p>
-    <p>wholesomebitesbakery@hotmail.com</p>
+    <div class="navBar">
+            
+                    <a href="./index.html">
+                    <h2>Home</h2>
+                    </a>
+                    <a href="./indexAbout.html">
+                    <h2>About</h2>
+                    </a>
+                    <a href="./indexContact.html">
+                    <h2>Contact</h2>
+                    </a>
+    
+                    <a href="./indexMenu.html">
+                        <button>
+                            Menu
+                        </button>
+                    </a>
     </div>
+
     
 
-    <div class="socialMedia">
-    <h2>SOCIAL MEDIA</h2>
-    <p>facebook.com/wholsomebitesbakery</p>
-    <p>instagram.com/wholesomebitesbakery</p>
-    <p>Twitter: @wholesomebitesbakery</p>
+
+  <main class="contact-page">
+    <section class="contact-container">
+      <h2>Contact Us</h2>
+      <p>Have questions or feedback? We'd love to hear from you! Fill out the form below, and we'll get back to you soon.</p>
+      <form action="#" method="POST" class="contact-form">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" placeholder="Full Name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Your Email</label>
+          <input type="email" id="email" name="email" placeholder="Email Address" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message" rows="6" placeholder="Write your message here..." required></textarea>
+        </div>
+        <button type="submit" class="submit-button">Send Message</button>
+      </form>
+    </section>
+  </main>
+ 
+
+  <footer>
+    <div class="footerContent">
+
+        <div class="footerLogo">
+            <h2>Wholesome Bites Bakery</h2>
+            <p>Organic | Vegan-Friendly | Farm-to-Table</p>
+        </div>
+
+        <div class="footer-links">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./indexAbout.html">About</a></li>
+                <li><a href="./indexContact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-contact">
+            <p><strong>Address:</strong> 448 Lafayette Ave, Brooklyn, NY 11205</p>
+            <p><strong>Phone:</strong> 347-533-7544</p>
+            <p><strong>Email:</strong> info@wholesomebites.com</p>
+        </div>
+
+        <div class="footer-social">
+            <a href="https://www.facebook.com" target="_blank"><strong>Facebook</strong> |</a>
+            <a href="https://www.instagram.com" target="_blank"><strong>Instagram </strong>|</a>
+            <a href="https://www.twitter.com" target="_blank"><strong>Twitter</strong></a>
+        </div>
     </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2024 Wholesome Bites Bakery. All Rights Reserved.</p>
+    </div>
+    </div>
+</footer>
+    
     
 
-    <div class="location">
-    <h2>LOCATION</h2>
-    <p>2755 Broughton St, Savannah, Ga 31404</p>
-    </div>
-</div>
+
+
 </body>
 </html>

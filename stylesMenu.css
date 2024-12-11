@@ -1,168 +1,247 @@
 @import url('https://fonts.googleapis.com/css2?family=Darumadrop+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Coiny&family=Montserrat:wght@100..900&family=Roboto:wght@100..900&family=Baloo+Tamma+2:wght@400..800&family=Londrina+Outline&display=swap');
 
-
-body{
-    margin:0;
-    padding:0;  
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-.navBar{
-    display:flex;
-    font-family: "Darumadrop One", sans-serif; 
-    justify-content: space-between;
-    padding: 1rem;
-    font-size: 16px;
-    margin-bottom: 1rem;
-    color: white;
-    background-color: darkolivegreen;
+body {
+    font-family: "Roboto", sans-serif;
 }
 
-.rightNav{
+/* Header */
+.header {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    background-color: black;
+    padding: 1rem;
+}
+
+.header h4 {
+    font-family: "Baloo Tamma 2", sans-serif;
+    color: white;
+}
+
+/* Navigation Bar */
+.navBar {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    background-color: salmon;
+    padding: 2rem;
+    flex-wrap: wrap;
+}
+
+.navBar a {
+    text-decoration: none;
+    color: black;
+    font-family: "Coiny", sans-serif;
+}
+
+.navBar a:hover {
+    cursor: pointer;
+    font-family: "Londrina Outline", sans-serif;
+}
+
+/* Body Menu */
+.bodyMenu {
+    text-align: center;
+    font-family: "Coiny", sans-serif;
+    color: black;
+    background-color: rgb(255, 250, 108);
+    padding: 1rem 5rem;
+    border: 5px dotted black;
+    border-radius: 2rem;
+    margin: 2rem;
+}
+
+/* Menu Items */
+.menuItems {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: rgb(255, 192, 203);
+    border: 5px solid rgb(74, 186, 255);
+    border-radius: 5rem;
+    padding: 4rem;
+    margin: 2rem;
+}
+
+.aMenuItem {
     display: flex;
     gap: 1rem;
-    font-size: 11px;
-}
-
-.navBarTwo{
-    font-family: "Darumadrop One", sans-serif; 
-    color:darkolivegreen;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 1rem;
-}
-
-.menuItems{
-    color: darkolivegreen;
-
-}
-
-img{
-    height:160px;
-    width: 160px;
-    border-radius: 2rem;
-}
-
-.aMenuItem{
-    display: flex;
-    gap: 2rem;
-    padding: 1rem;
-    background-color:beige;
-    border: solid lightgray;
-    border-radius: 2rem;
-    margin: 1rem;
-}
-
-.itemDescription{
-    display:flex;
-    flex-direction: column;
-}
-
-.itemTitle{
-    display: flex;
-    gap:20rem;
-    color: black;
-}
-
-.drinkTitle{
-    font-family: "Darumadrop One", sans-serif; 
-    font-weight: bold;
-}
-
-.drinkItem{
-    display: flex;
-    gap:2rem;
-}
-
-.drinksMenu{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: beige;
-    border: solid lightgray;
-    color: black;
-    margin: 3rem;
+    background-color: rgb(255, 250, 108);
+    border: 1px solid black;
+    border-radius: 3rem;
     padding: 2rem;
+    flex: 1 1 calc(33% - 2rem); /* Three items per row */
+    max-width: 100%;
+
+    margin-bottom: 2rem;
+}
+
+.aMenuItem img {
+    height: auto;
+    width: 100px;
     border-radius: 2rem;
 }
 
-.menuItems{
-  display: flex;
+.itemDescription {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Baloo Tamma 2", sans-serif;
+    color: black;
 }
 
-a{
-    color: white;
+.itemTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    font-family: "Coiny", sans-serif;
+    gap: 1rem;
+}
+
+/* Drinks Menu */
+.drinksMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 250, 108);
+    color: black;
+    padding: 3rem;
+    border: 2px dashed black;
+    border-radius: 10rem;
+
+    width: 100%;
+    max-width: 16rem;
+    text-align: center;
+}
+
+
+
+.right {
+    display: flex;
+    flex-direction: column;  /* Stack the content vertically */
+    justify-content: center;
+    align-items: center;  /* Center the drinks menu */
+    width: 100%;  /* Ensure full width */
+    margin-top: 2rem;  /* Optional: Add some space between the menu and drinks */
+}
+
+
+
+
+
+.drinkItem {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-family: "Baloo Tamma 2", sans-serif;
+}
+
+.drinkTitle {
+    font-family: "Coiny", sans-serif;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+    background-color: rgb(74, 186, 255);
+    color: black;
+}
+
+.footerContent {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.footerLogo h2 {
+    font-family: "Londrina Outline", sans-serif;
+    font-size: 40px;
+}
+
+.footerLogo p {
+    font-family: "Baloo Tamma 2", sans-serif;
+}
+
+.footer-links ul {
+    list-style: none;
+    font-family: "Coiny", sans-serif;
+}
+
+.footer-links ul li a {
     text-decoration: none;
+    color: black;
 }
 
+.footer-links ul li a:hover {
+    color: rgb(255, 192, 203);
+}
 
-/* Need to figure out how to add Media Queries to ensure responsivness */
+.footer-contact p,
+.footer-social a {
+    font-family: "Baloo Tamma 2", sans-serif;
+    color: black;
+}
 
-/* Media query for tablets and smaller screens */
+.footer-social a:hover {
+    color: rgb(255, 192, 203);
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    font-family: "Baloo Tamma 2", sans-serif;
+}
+
+/* Media Queries */
 @media (max-width: 1050px) {
-    .navBar {
-        flex-direction: column; /* Stack nav items vertically */
-        align-items: center;
-    }
-
-    .rightNav {
-        flex-direction: column; /* Stack nav links vertically */
-        gap: 0.5rem;
-    }
-
-    .menuItems {
-        flex-direction: column; /* Stack menu items */
-        padding: 0; /* Remove padding */
-    }
-
     .aMenuItem {
-        flex-direction: column; /* Stack image and description */
-        align-items: center; /* Center items */
-        margin: 0.5rem 0; /* Reduce margin */
+        flex: 1 1 calc(50% - 2rem); /* Two items per row */
+        margin-bottom: 2rem;
     }
+}
 
-    img {
-        height: auto; /* Maintain aspect ratio */
-        width: 100%; /* Full width on mobile */
-        max-width: 160px; /* Limit size */
+@media (max-width: 768px) {
+    .aMenuItem {
+        flex-direction: column;
+        align-items: center;
+
+        margin-bottom: 2rem;
     }
 
     .itemTitle {
-        gap: 0; /* Reset gap */
-        text-align: center; /* Center titles */
-    }
-
-    .drinkMenu {
-        width: 100%; /* Full width for drinks menu */
-        padding: 1rem; /* Add padding */
-    }
-
-    .drinkItem {
-        justify-content: space-between; /* Align price correctly */
+        flex-direction: column;
+        text-align: center;
     }
 }
 
-/* Media query for smaller phones */
 @media (max-width: 480px) {
-    .navBar {
-        padding: 0.5rem; /* Reduce padding */
-    }
-
-    .navBarTwo h1 {
-        font-size: 1.5rem; /* Adjust heading size */
-    }
-
-    .drinkTitle {
-        font-size: 1.2rem; /* Adjust drink title size */
-    }
-
-    .itemDescription {
-        font-size: 0.9rem; /* Smaller font size for descriptions */
+    .menuItems {
+        padding: 1rem;
+        gap: 1rem;
     }
 
     .aMenuItem {
-        padding: 0.5rem; /* Less padding on items */
+        flex: 1 1 100%;
+    }
+
+    .navBar {
+        gap: 1rem;
+    }
+
+    .bodyMenu {
+        padding: 1rem 2rem;
     }
 }

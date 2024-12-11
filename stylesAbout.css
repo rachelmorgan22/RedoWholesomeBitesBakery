@@ -1,49 +1,199 @@
 @import url('https://fonts.googleapis.com/css2?family=Darumadrop+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Coiny&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tilt+Warp&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400..800&family=Coiny&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tilt+Warp&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400..800&family=Coiny&family=Londrina+Outline&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tilt+Warp&display=swap');
 
 
-
-body{
-    margin:0;
-    padding:0;
-    position: absolute;
-    width: auto;  
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
 }
 
+.header{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    background-color: black;
+    padding: 1rem;
+}
+
+.header h4{
+    font-family: "Baloo Tamma 2", sans-serif;
+    color: white;
+}
+
+.navBar a{
+    text-decoration: none;
+    color: black;
+}
 
 .navBar{
-    display:flex;
-    font-family: "Darumadrop One", sans-serif;
-    justify-content: space-between;
-    padding: 1rem;
-    font-size: 16px;
-    margin-bottom: 1rem;
-    color: white;
-    background-color: darkolivegreen;
-}
-
-.rightNav{
     display: flex;
-    gap: 1rem;
-    font-size: 11px;
+    justify-content: center;
+    gap: 2rem;
+    padding-top: 1.5rem;
+    flex-wrap: wrap;
+    font-family: "Coiny", sans-serif;
+
+    background-color: salmon;
+    padding: 2rem;
+    margin-bottom: 2rem;
 }
 
-.navBarTwo{
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 3rem;
-  padding-left: 3rem;
-  padding-right: 3rem;
+
+
+.navBar button{
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: #ffe95e;
+    border: none;
+    font-family: "Coiny", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    letter-spacing: 2px;
+    border-radius: 2rem;
+    border: 5px solid rgb(74, 186, 255);
 }
+
+.navBar button:hover {
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+
+.navBar a h2:hover {
+    cursor: pointer;
+    font-family: "Londrina Outline", sans-serif;
+}
+
+
+img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    margin-bottom: 2rem;
+}
+
+
+.aboutBody {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 4rem;
+    background-color: #ffe95e;
+    margin-bottom: 2rem;
+    border: 5px dotted black;
+    border-radius: 2rem;
+
+    margin: 2rem;
+}
+
+.aboutBody h1 {
+    font-family: "Londrina Outline", sans-serif;
+    font-size: 60px;
+}
+
+.aboutBody p {
+    font-family: "Baloo Tamma 2", sans-serif;
+}
+
+
+
+
+
+.footerContent {
+    display: flex;
+    justify-content: space-around;
+    padding: 5rem;
+    gap: 2rem;
+    max-width: 100%;
+    flex-wrap: wrap;
+    background-color: rgb(74, 186, 255);
+}
+
+.footerLogo {
+    color: black;
+}
+
+.footerLogo h2 {
+    padding-bottom: .5rem;
+    letter-spacing: 1px;
+    font-family: "Londrina Outline", sans-serif;
+    font-size: 40px;
+}
+
+.footerLogo p {
+    font-family: "Baloo Tamma 2", sans-serif;
+}
+
+.footer-links ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.footer-links ul li a:hover {
+    color: rgb(255, 192, 203);
+}
+
+.footer-links ul {
+    list-style: none;
+    font-family: "Coiny", sans-serif;
+}
+
+.footer-contact p {
+    text-decoration: none;
+    color: black;
+    font-family: "Baloo Tamma 2", sans-serif;
+}
+
+.footer-social a {
+    text-decoration: none;
+    color: black;
+    font-family: "Baloo Tamma 2", sans-serif;
+}
+
+.footer-social a:hover {
+    color: rgb(255, 192, 203);
+}
+
+
+footer {
+    background-color: rgb(74, 186, 255);
+}
+
+.footer-bottom {
+    font-family: "Baloo Tamma 2", sans-serif;
+    justify-content: center;
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #croppedCafe{
     height: 100%;
     width: 100%;
 }
 
-h1{
-    font-family: "Darumadrop One", sans-serif;
-}
+
 
 .center{
     display:flex;
@@ -56,4 +206,5 @@ a{
     color: white;
     text-decoration: none;
 }
+
 

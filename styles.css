@@ -13,12 +13,13 @@
     display: flex;
     justify-content: center;
     gap: 2rem;
-    background-color: salmon;
+    background-color: black;
     padding: 1rem;
 }
 
 .header h4{
     font-family: "Baloo Tamma 2", sans-serif;
+    color: white;
 }
 
 .navBar a{
@@ -32,7 +33,10 @@
     gap: 2rem;
     padding-top: 1.5rem;
     flex-wrap: wrap;
-    font-family: "Baloo Tamma 2", sans-serif;
+    font-family: "Coiny", sans-serif;
+
+    background-color: salmon;
+    padding: 2rem;
 }
 
 
@@ -42,11 +46,26 @@
     padding-right: 4rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-    background-color: olive;
+    background-color: #ffe95e;
     border: none;
     font-family: "Coiny", sans-serif;
     font-size: 20px;
     font-weight: bold;
+    color: black;
+    letter-spacing: 2px;
+    border-radius: 2rem;
+    border: 5px solid rgb(74, 186, 255);
+}
+
+.navBar button:hover {
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+
+.navBar a h2:hover {
+    cursor: pointer;
+    font-family: "Londrina Outline", sans-serif;
 }
 
 .heroSection{
@@ -56,6 +75,13 @@
     box-sizing: border-box;
     gap: 2rem;
     max-height: auto;
+    padding-bottom: 6rem;
+
+    border: 5px dotted black;
+    margin: 2rem;
+    border-radius: 3rem;
+    overflow: hidden;
+  
 }
 
 .heroSection img{
@@ -70,15 +96,48 @@
     flex-shrink: 1;
     padding-top: 10rem;
     padding-right: 9rem;
-    color: salmon;
+    color: black;
+    letter-spacing: 3px;
+
+    color: white;
+    border-radius: 5rem;
+    margin: 1rem;
+    padding: 3rem;
+    border: 8px solid black;
+    margin-right: 5rem;
+    margin-top: 5rem;
+    background-color: black;
+}
+
+
+.bakedGoods{
+    width: calc(100% - 4rem);
+    max-height: auto;
+    padding: 1rem;
+    background-color: ;
+    border-radius: 20rem;
+    border: 10px dashed rgb(239, 122, 255);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    margin-right: 2rem;
+    box-sizing: border-box;
+    margin-left: 2rem;
+
+    /*  padding: 1rem;
+    border: 15px dashed rgb(239, 122, 255); 
+    overflow: hidden;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; */ 
+
 }
 
 
 
 
-
-
-.bottomImages, .orangeCupCake{
+/* .bottomImages, .bakedGoods{
     min-width: 60px;
     max-width: 500px;
     max-height: 500px;
@@ -86,21 +145,25 @@
     border-radius: 20rem;
     padding-top: 2rem;
     padding-right: 3rem;
-}
+} 
+*/
 
-.bottomSection{
+.welcomeSection{
     display: flex;
-    justify-content: flex-end;
-    padding-right: 2rem;
+    justify-content: center;
+    background-color: #ffe95e;
+    max-height: 500px;
 }
 
-.bottomSectionRight{
+.welcomeSectionRight{
  display: flex;
  flex-direction: column;
  align-items: flex-end;
  padding: 6rem;
  justify-content: center;
  padding-top: 0;
+ background-color: #ffe95e;
+ padding-top: 1rem;
 }
 
 
@@ -110,52 +173,121 @@
 
 
 
-.bottomSectionRight p{
+.welcomeSectionRight p{
     font-family: "Baloo Tama 2", sans-serif;
     line-height: 1.8;
+    padding: 3rem;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-align: center;
 }
 
-.bottomSectionRight h1{
+.welcomeSectionRight h1{
    
-    font-family: "Coiny", sans-serif;
-    color: olive;
-    font-size: 40px;
+    font-family: "Londrina Outline", sans-serif;
+    color: black;
+    font-size: 80px;
+    letter-spacing: 3.5px;
+    background-color: rgb(255, 192, 203);
+    padding: 2rem 1rem 2rem 40rem ;
+    margin-top: 5rem;
+    border-radius: 1rem;
+
+    border: 5px solid black;
 }
 
-.bottomSectionImage{
-    min-width: 300px;
-    max-width: 100%;
-    max-height: 500px;
-    flex: 1;
-    max-height: auto;
-}
+
 
 
 
    @media (max-width: 768px) {
-    .bottomSection {
+    .welcomeSection {
         flex-wrap: wrap;
     }
 
-    .bottomSection h1{
+    .welcomeSection h1{
         padding-top: 1rem;
     }
 
-    .bottomSectionRight {
+    .welcomeSectionRight {
         padding-left: 2rem;
     }
 
-    .bottomSection img {
-        padding-left: 2rem;
+    .welcomeSection img {
         flex-shrink: 1;
     }
 
     .heroSection h1 {
-        padding-left: 2rem;
-        padding-top: 0;
+        border-radius: 5rem;
+        margin: 1rem;
+        padding: 3rem;
+        margin-right: 5rem;
     }
    }
 
-   
 
-   
+.footerContent {
+    display: flex;
+    justify-content: space-around;
+    padding: 5rem;
+    gap: 2rem;
+    max-width: 100%;
+    flex-wrap: wrap;
+    background-color: rgb(74, 186, 255);
+}
+
+.footerLogo {
+    color: black;
+}
+
+.footerLogo h2 {
+    padding-bottom: .5rem;
+    letter-spacing: 1px;
+    font-family: "Londrina Outline", sans-serif;
+    font-size: 40px;
+}
+
+.footerLogo p {
+    font-family: "Baloo Tamma 2", sans-serif;
+}
+
+.footer-links ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.footer-links ul li a:hover {
+    color: rgb(255, 192, 203);
+}
+
+.footer-links ul {
+    list-style: none;
+    font-family: "Coiny", sans-serif;
+}
+
+.footer-contact p {
+    text-decoration: none;
+    color: black;
+    font-family: "Baloo Tamma 2", sans-serif;
+}
+
+.footer-social a {
+    text-decoration: none;
+    color: black;
+    font-family: "Baloo Tamma 2", sans-serif;
+}
+
+.footer-social a:hover {
+    color: rgb(255, 192, 203);
+}
+
+
+footer {
+    background-color: rgb(74, 186, 255);
+}
+
+.footer-bottom {
+    font-family: "Baloo Tamma 2", sans-serif;
+    justify-content: center;
+    display: flex;
+}
